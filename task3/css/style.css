@@ -1,0 +1,19 @@
+body {
+	width: 500px;
+}
+.header {
+	text-align: center;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.firt-paragraph {
+	text-align: center;
+	font-family: "Playfair Display", serif;
+}
+.second-paragraph {
+	text-align: center;
+	font-family: "Playfair Display", serif;
+}
+.footer {
+	text-align: right;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+}
