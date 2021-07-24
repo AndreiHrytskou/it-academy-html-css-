@@ -1,0 +1,12 @@
+.border {
+	height: auto;
+	width: auto;
+	padding: 100px;
+	background: url(/img/left_top.png) left top / auto no-repeat, url(/img/right_top.png) right top / auto no-repeat,
+		url(/img/top.png) top / auto repeat-x, url(/img/right_bottom.png) right bottom / auto no-repeat,
+		url(/img/right.png) right / auto repeat-y, url(/img/left_bottom.png) left bottom / auto no-repeat,
+		url(/img/bottom.png) bottom / auto repeat-x, url(/img/left.png) left / auto repeat-y;
+}
+h2 {
+	text-align: center;
+}
