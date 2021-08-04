@@ -1,0 +1,83 @@
+tr,
+td {
+	display: block;
+	border: 0;
+}
+.wrapper {
+	margin: 0;
+	border: 0;
+}
+.header,
+.footer {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgba(128, 166, 255, 0.7);
+}
+
+.header-title,
+.footer-title {
+	width: auto;
+	margin: 0;
+	padding: 15px;
+	font-size: 50px;
+	font-family: "Manrope", sans-serif;
+	color: blue;
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+}
+
+.menu {
+	position: relative;
+	left: 0;
+	top: 0;
+	padding-left: 20px;
+	padding-top: 50px;
+	background-color: rgba(255, 166, 0, 0.7);
+	width: 250px;
+	height: 485px;
+	float: left;
+}
+.menu-title {
+	font-size: 20px;
+}
+.content {
+	margin-bottom: 2px;
+	width: 100%;
+	height: auto;
+}
+
+.content-image {
+	width: 600px;
+	height: 400px;
+	float: left;
+	position: relative;
+}
+.ball {
+	background: url(/task5table/img/soccer-ball-variant.png) repeat-y;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.5;
+	width: 50px;
+	height: 100%;
+}
+.content-title {
+	display: inline-block;
+	font-family: "Times New Roman", Times, serif;
+	position: relative;
+	left: 550px;
+	font-size: 30px;
+}
+.content-text {
+	position: relative;
+	left: 10px;
+	text-align: left;
+}
