@@ -1,0 +1,48 @@
+div {
+	height: 50px;
+}
+
+a {
+	color: green;
+	font-size: 25px;
+	position: relative;
+	bottom: 20px;
+}
+
+img {
+	width: 30px;
+	height: 50px;
+	background-color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+table {
+	margin-top: 50px;
+}
+td > a {
+	padding: 0 20px 0 20px;
+	border-right: 2px solid red;
+}
+tr td:last-child a {
+	border-right: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+nav ul li::after {
+	margin: 0 20px;
+	content: "|";
+	color: red;
+	font-weight: bold;
+}
+nav ul li:last-child::after {
+	content: " ";
+}
+li a {
+	position: relative;
+	top: 0;
+}
