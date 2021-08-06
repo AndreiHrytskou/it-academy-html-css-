@@ -1,0 +1,35 @@
+html {
+	scroll-behavior: smooth;
+}
+.first,
+.second,
+.third {
+	margin-bottom: 20px;
+}
+.title {
+	margin: 0;
+}
+.birthday {
+	color: green;
+}
+.championat {
+	color: red;
+}
+.info::before {
+	content: url(/task6c/img/extref.png);
+	margin-right: 2px;
+}
+.link {
+	display: none;
+}
+.text {
+	color: blue;
+	font-style: italic;
+	margin: 0;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
