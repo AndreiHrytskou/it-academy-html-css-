@@ -1,0 +1,145 @@
+html,
+body {
+	margin: 0;
+}
+.wrapper {
+	margin: 0;
+}
+.header {
+	margin: 0;
+	background-color: rgb(253, 191, 48);
+	width: 100%;
+	height: 200px;
+}
+
+.information {
+	display: inline-block;
+	position: relative;
+}
+.logo {
+	font-size: 70px;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	position: relative;
+	left: 75px;
+	top: 0;
+	margin: 0;
+}
+.work-time {
+	display: inline-block;
+	width: 220px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	left: 555px;
+}
+.img-calendar {
+	width: 50px;
+	height: 50px;
+}
+.text-calendar {
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	top: -24px;
+	left: 70px;
+}
+.time-calendar {
+	font-family: "Lato", sans-serif;
+	margin-top: 5px;
+	font-size: 16px;
+	position: absolute;
+	top: 25px;
+	left: 70px;
+}
+a {
+	text-decoration: none;
+	color: rgb(0, 7, 33);
+}
+
+.call {
+	width: 220px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 950px;
+}
+.img-call {
+	width: 50px;
+	height: 50px;
+}
+.text-call {
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	top: -24px;
+	left: 70px;
+}
+.number {
+	font-family: "Lato", sans-serif;
+	margin-top: 5px;
+	font-size: 16px;
+	position: absolute;
+	top: 25px;
+	left: 70px;
+}
+
+.mail {
+	width: 220px;
+	height: 50px;
+	display: flex;
+	position: absolute;
+	top: 20px;
+	left: 1265px;
+}
+.img-email {
+	width: 50px;
+	height: 50px;
+}
+.text-email {
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	top: -24px;
+	left: 70px;
+}
+.address {
+	font-family: "Lato", sans-serif;
+	margin-top: 5px;
+	font-size: 16px;
+	position: absolute;
+	top: 25px;
+	left: 70px;
+}
+.menu {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative;
+	top: 6px;
+	left: 80px;
+	width: 90%;
+	height: 110px;
+	background-color: rgb(0, 7, 33);
+}
+.menu-items {
+	display: inline-block;
+	list-style: none;
+}
+ul li {
+	display: inline-block;
+}
+ul li > a {
+	color: white;
+}
+.get > a {
+	font-family: "Lato", sans-serif;
+	color: white;
+	background-color: rgb(0, 7, 33);
+	border: 2px solid white;
+	padding: 5px;
+	position: absolute;
+	top: 38px;
+	right: 20px;
+}
