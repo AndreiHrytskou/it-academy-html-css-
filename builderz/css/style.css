@@ -387,46 +387,123 @@ ul li > a {
 	position: relative;
 	top: 200px;
 	display: flex;
-
 	width: 100%;
 	height: 200px;
 }
-.container-left {
+.container-left,
+.container-right {
 	background-color: rgb(0, 7, 33);
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-grow: 1;
 }
 .container-left-one,
-.container-left-two {
+.container-left-two,
+.container-right-one,
+.container-right-two {
 	display: flex;
 	flex-wrap: wrap;
 	color: rgb(253, 191, 48);
 	font-family: "Lato", sans-serif;
 }
+.container-left-one,
+.container-right-one {
+	margin-right: 35px;
+}
 .container-left-one-image,
-.container-left-two-image {
-	width: 50px;
-	height: 50px;
+.container-left-two-image,
+.container-right-one-image,
+.container-right-two-image {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	left: 30px;
+	top: 15px;
 }
 
 .container-right {
 	background-color: rgb(253, 191, 48);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-grow: 1;
 }
 .container-right-one,
 .container-right-two {
-	display: flex;
-	flex-wrap: wrap;
+	color: rgb(0, 7, 33);
+}
+
+.container-left-one h2,
+.container-left-two h2,
+.container-right-one h2,
+.container-right-two h2 {
+	margin: 0;
+	position: relative;
+	left: 55px;
+	font-size: 32px;
+	font-weight: 900;
+}
+.container-left-one p,
+.container-left-two p,
+.container-right-one p,
+.container-right-two p {
+	position: relative;
+	top: 25px;
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.service h2 {
+	display: inline-block;
+	text-align: center;
+	color: rgb(253, 191, 48);
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+}
+.service h3 {
+	display: inline-block;
+	text-align: center;
 	color: rgb(0, 7, 33);
 	font-family: "Lato", sans-serif;
+	font-size: 32px;
 }
-.container-right-one-image,
-.container-right-two-image {
-	width: 50px;
-	height: 50px;
+.service {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: start;
+}
+.service-title {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	top: 200px;
+	left: 50%;
+}
+.service-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-image {
+	flex-basis: 400px; /* отнимем margin и скажем растягиваться */
+	margin: 5px;
+	position: relative;
+	left: 50px;
+	top: 350px;
+	width: 400px;
+	height: 550px;
+}
+.service-image-pic {
+	width: 400px;
+	height: 500px;
+}
+.service-image-title {
+	margin: 0;
+	font-size: 32px;
+	color: rgb(253, 191, 48);
+	background-color: rgb(0, 7, 33);
+}
+.service-image-plus {
+	width: 40px;
+	height: 40px;
+	background-color: rgb(253, 191, 48);
+	color: rgb(0, 7, 33);
+	margin: 2px;
 }
