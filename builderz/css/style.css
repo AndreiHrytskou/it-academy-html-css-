@@ -596,3 +596,124 @@ ul li > a {
 	position: relative;
 	top: -5px;
 }
+.question {
+	display: grid;
+	grid-template-columns: 700px 100px 700px;
+	grid-template-rows: 70px 70px 400px;
+	grid-template-areas:
+		"question-header question-header question-header"
+		"question-ask question-ask question-ask"
+		"question-ask-box question-ask-box question-ask-box";
+	position: relative;
+	top: 800px;
+}
+.question-header {
+	grid-area: question-header;
+	justify-self: center;
+	color: rgb(253, 191, 48);
+	font-family: "Lato", sans-serif;
+}
+.question-header h2 {
+	margin-bottom: 0;
+}
+.question-ask {
+	grid-area: question-ask;
+	justify-self: center;
+	color: rgb(0, 7, 33);
+	font-size: 70px;
+	font-weight: 900;
+	font-family: "Lato", sans-serif;
+}
+.question-ask p {
+	margin: 0;
+}
+.question-ask-box {
+	margin-top: 30px;
+	grid-area: question-ask-box;
+	display: grid;
+	grid-template-columns: 700px 100px 700px;
+	grid-template-rows: repeat(5, 70px);
+	grid-template-areas:
+		"question-ask-box1 question-border question-ask-box2"
+		"question-ask-box1 question-border question-ask-box2"
+		"question-ask-box1 question-border question-ask-box2"
+		"question-ask-box1 question-border question-ask-box2"
+		"question-ask-box1 question-border question-ask-box2";
+	row-gap: 20px;
+}
+.question-ask-box1 li,
+.question-ask-box2 li {
+	border: 1px solid grey;
+	width: 500px;
+	height: 50px;
+	margin-top: 30px;
+	padding-left: 10px;
+}
+.question-ask-box1 {
+	grid-area: question-ask-box1;
+}
+.question-border {
+	grid-area: question-border;
+	border-left: 2px solid rgb(253, 191, 48);
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.question-ask-box2 {
+	grid-area: question-ask-box2;
+}
+.question-plus {
+	width: 15px;
+	height: 15px;
+	position: relative;
+	bottom: 32px;
+	left: 465px;
+}
+li {
+	list-style: none;
+}
+.customer {
+	position: relative;
+	top: 1000px;
+	position: relative;
+	left: 390px;
+}
+.customer-person {
+}
+.customer1 {
+	border-radius: 50%;
+	position: absolute;
+	left: 90px;
+	transition: all 1s ease-in-out;
+}
+.customer2 {
+	border-radius: 50%;
+	position: absolute;
+	left: 200px;
+	z-index: 1;
+	transition: all 1s ease-in-out;
+}
+.customer3 {
+	border-radius: 50%;
+	position: absolute;
+	left: 310px;
+	transition: all 1s ease-in-out;
+}
+.customer1:hover,
+.customer2:hover,
+.customer3:hover {
+	z-index: 2;
+	transform: scale(1.5);
+}
+.customer-item {
+	position: relative;
+	top: 250px;
+	left: 300px;
+	color: rgb(253, 191, 48);
+	font-family: "Lato", sans-serif;
+}
+.customer-item h2 {
+	font-weight: 900;
+	position: absolute;
+	left: -50px;
+	margin: 0;
+}
