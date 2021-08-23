@@ -507,7 +507,6 @@ ul li > a {
 .video {
 	position: absolute;
 	top: 3500px;
-	width: 1200px;
 	height: 600px;
 }
 .video-play {
@@ -598,14 +597,15 @@ ul li > a {
 }
 .question {
 	display: grid;
-	grid-template-columns: 700px 100px 700px;
-	grid-template-rows: 70px 70px 400px;
+	grid-template-columns: 650px 100px 650px;
+	grid-template-rows: 70px 70px 500px;
 	grid-template-areas:
 		"question-header question-header question-header"
 		"question-ask question-ask question-ask"
 		"question-ask-box question-ask-box question-ask-box";
 	position: relative;
 	top: 800px;
+	margin-left: 60px;
 }
 .question-header {
 	grid-area: question-header;
@@ -631,7 +631,7 @@ ul li > a {
 	margin-top: 30px;
 	grid-area: question-ask-box;
 	display: grid;
-	grid-template-columns: 700px 100px 700px;
+	grid-template-columns: 650px 100px 650px;
 	grid-template-rows: repeat(5, 70px);
 	grid-template-areas:
 		"question-ask-box1 question-border question-ask-box2"
@@ -648,6 +648,7 @@ ul li > a {
 	height: 50px;
 	margin-top: 30px;
 	padding-left: 10px;
+	font-family: "Lato", sans-serif;
 }
 .question-ask-box1 {
 	grid-area: question-ask-box1;
@@ -657,6 +658,8 @@ ul li > a {
 	border-left: 2px solid rgb(253, 191, 48);
 	margin-top: 30px;
 	margin-bottom: 15px;
+	position: relative;
+	left: 50px;
 }
 .question-ask-box2 {
 	grid-area: question-ask-box2;
@@ -672,12 +675,11 @@ li {
 	list-style: none;
 }
 .customer {
+	width: 800px;
+	height: 400px;
 	position: relative;
 	top: 1000px;
-	position: relative;
-	left: 390px;
-}
-.customer-person {
+	left: 460px;
 }
 .customer1 {
 	border-radius: 50%;
@@ -705,9 +707,11 @@ li {
 	transform: scale(1.5);
 }
 .customer-item {
+	width: 200px;
+	margin-right: 0;
 	position: relative;
 	top: 250px;
-	left: 300px;
+	left: 275px;
 	color: rgb(253, 191, 48);
 	font-family: "Lato", sans-serif;
 }
@@ -716,4 +720,102 @@ li {
 	position: absolute;
 	left: -50px;
 	margin: 0;
+}
+.blog {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"blog-header"
+		"blog-items";
+	position: absolute;
+	top: 6200px;
+}
+.blog-header {
+	grid-area: blog-header;
+	justify-self: center;
+	margin-bottom: 50px;
+}
+.blog-header h2 {
+	color: rgb(253, 191, 48);
+	font-family: "Lato", sans-serif;
+	font-size: 25px;
+	position: relative;
+	left: 190px;
+}
+.blog-header p {
+	color: rgb(0, 7, 33);
+	font-family: "Lato", sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	margin: 0;
+}
+.blog-items {
+	grid-area: blog-items;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: "blog-item1 blog-item2 blog-item3";
+}
+.blog-items img:first-child {
+	width: 420px;
+	height: 300px;
+	position: relative;
+}
+.blog-item1 {
+	grid-area: blog-item1;
+	margin-left: 60px;
+}
+.blog-item1 h3,
+.blog-item2 h3,
+.blog-item3 h3 {
+	width: 400px;
+	height: 50px;
+	background-color: rgb(0, 7, 33);
+	font-family: "Lato", sans-serif;
+	color: rgb(253, 191, 48);
+	margin: 0;
+	padding-left: 20px;
+	position: absolute;
+	top: 481px;
+	display: flex;
+	align-items: center;
+}
+.blog-item2 {
+	grid-area: blog-item2;
+	margin-left: 50px;
+}
+.blog-item3 {
+	grid-area: blog-item3;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.blog-item-plus {
+	width: 30px;
+	height: 30px;
+	background-color: rgb(253, 191, 48);
+	padding: 10px;
+	position: relative;
+	top: -5px;
+	left: 370px;
+}
+.blog-item-border {
+	border-top: 2px solid rgb(253, 191, 48);
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.blog-item1 h4,
+.blog-item2 h4,
+.blog-item3 h4 {
+	color: gray;
+	display: flex;
+	justify-content: center;
+}
+.blog-item1 h4 span,
+.blog-item2 h4 span,
+.blog-item3 h4 span {
+	font-style: italic;
+}
+.blog-item-text-bottom {
+	color: gray;
 }
